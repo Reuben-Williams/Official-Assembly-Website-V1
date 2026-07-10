@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Assemblywoman Official - Social Media Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary-fixed-variant": "#004491",
+                        "inverse-primary": "#aec7f6",
+                        "on-secondary-container": "#003370",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#1c2228",
+                        "surface-container-low": "#f3f3f4",
+                        "on-primary-fixed": "#001b3d",
+                        "tertiary-fixed": "#dde3eb",
+                        "primary-fixed-dim": "#aec7f6",
+                        "secondary-fixed-dim": "#acc7ff",
+                        "surface-tint": "#465f88",
+                        "primary-container": "#002147",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#44474e",
+                        "tertiary-fixed-dim": "#c1c7ce",
+                        "secondary-container": "#659dfe",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "outline": "#74777f",
+                        "outline-variant": "#c4c6cf",
+                        "surface-container": "#eeeeee",
+                        "on-primary-container": "#708ab5",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dadada",
+                        "secondary": "#115cb9",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "primary": "#000a1e",
+                        "on-background": "#1a1c1c",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-surface": "#1a1c1c",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#001a40",
+                        "on-tertiary-fixed-variant": "#41474e",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#161c22",
+                        "tertiary": "#060b10",
+                        "surface": "#f9f9f9",
+                        "secondary-fixed": "#d7e2ff",
+                        "inverse-on-surface": "#f0f1f1",
+                        "primary-fixed": "#d6e3ff",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-container": "#838990"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "stack-lg": "32px",
+                        "section-gap": "80px",
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "margin-desktop": "48px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "title-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased pt-20">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface-container text-primary dark:text-inverse-primary fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<div class="font-display-lg text-headline-sm md:text-display-lg text-primary-container dark:text-primary-fixed truncate">
+                Assemblywoman Official
+            </div>
+<div class="hidden md:flex items-center space-x-6">
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors duration-200 px-2 py-1 rounded-DEFAULT font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors duration-200 px-2 py-1 rounded-DEFAULT font-label-md text-label-md" href="#">About</a>
+<a class="text-secondary dark:text-secondary-fixed border-b-2 border-secondary dark:border-secondary-fixed pb-1 hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors duration-200 px-2 py-1 rounded-DEFAULT font-label-md text-label-md" href="#">News</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors duration-200 px-2 py-1 rounded-DEFAULT font-label-md text-label-md" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors duration-200 px-2 py-1 rounded-DEFAULT font-label-md text-label-md" href="#">Contact</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors duration-200 px-2 py-1 rounded-DEFAULT font-label-md text-label-md" href="#">Voting</a>
+</div>
+<div class="flex items-center space-x-4">
+<button aria-label="Search" class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center p-2 rounded-full hover:bg-surface-container-low">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="font-label-md text-label-md text-primary border border-outline px-4 py-2 rounded-DEFAULT hover:bg-surface-container-low transition-colors">
+                    ES/EN
+                </button>
+<!-- Mobile Menu Button -->
+<button aria-label="Menu" class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg md:py-section-gap">
+<!-- Header Section -->
+<header class="mb-section-gap">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-stack-md">Official Updates</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Stay informed with the latest news, events, and community engagements directly from the Assemblywoman's official channels. Follow our verified accounts for real-time updates.
+            </p>
+</header>
+<!-- Main Layout: Sidebar + Content -->
+<div class="flex flex-col lg:flex-row gap-gutter">
+<!-- Sidebar (3 cols on desktop) -->
+<aside class="w-full lg:w-3/12 flex-shrink-0 flex flex-col gap-stack-lg">
+<!-- Social Links Box -->
+<div class="bg-surface-container-low rounded-lg p-6 border border-outline-variant">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-stack-md">Connect</h2>
+<ul class="flex flex-col gap-stack-sm">
+<li>
+<a class="flex items-center gap-3 font-label-md text-label-md text-secondary hover:bg-surface-container p-2 rounded-DEFAULT transition-colors" href="#">
+<span class="material-symbols-outlined icon-fill">public</span>
+                                Official Facebook
+                                <span class="material-symbols-outlined ml-auto text-on-surface-variant text-[18px]">open_in_new</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 font-label-md text-label-md text-secondary hover:bg-surface-container p-2 rounded-DEFAULT transition-colors" href="#">
+<span class="material-symbols-outlined icon-fill">photo_camera</span>
+                                Instagram Updates
+                                <span class="material-symbols-outlined ml-auto text-on-surface-variant text-[18px]">open_in_new</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 font-label-md text-label-md text-secondary hover:bg-surface-container p-2 rounded-DEFAULT transition-colors" href="#">
+<span class="material-symbols-outlined">flutter_dash</span>
+                                X / Twitter Feed
+                                <span class="material-symbols-outlined ml-auto text-on-surface-variant text-[18px]">open_in_new</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 font-label-md text-label-md text-secondary hover:bg-surface-container p-2 rounded-DEFAULT transition-colors" href="#">
+<span class="material-symbols-outlined icon-fill">smart_display</span>
+                                Assembly YouTube
+                                <span class="material-symbols-outlined ml-auto text-on-surface-variant text-[18px]">open_in_new</span>
+</a>
+</li>
+</ul>
+</div>
+<!-- Newsletter Signup -->
+<div class="bg-primary-container text-on-primary-container rounded-lg p-6">
+<h3 class="font-title-lg text-title-lg mb-stack-sm">Daily Briefing</h3>
+<p class="font-body-md text-body-md mb-stack-md">Get the most important legislative updates delivered to your inbox.</p>
+<form class="flex flex-col gap-stack-sm">
+<label class="sr-only" for="email-subscribe">Email Address</label>
+<input class="w-full bg-surface-container-lowest text-on-surface border-outline-variant rounded-DEFAULT focus:ring-2 focus:ring-secondary focus:border-secondary font-body-md py-2 px-3" id="email-subscribe" placeholder="Email Address" type="email"/>
+<button class="w-full bg-secondary text-on-secondary font-label-md text-label-md py-3 rounded-DEFAULT hover:bg-on-secondary-fixed-variant transition-colors shadow-sm hover:shadow-md h-[44px]" type="submit">Subscribe</button>
+</form>
+</div>
+</aside>
+<!-- Content Area (9 cols on desktop) - Bento Grid Style -->
+<div class="w-full lg:w-9/12 grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Featured / Priority Post (Spans 2 cols on md) -->
+<article class="col-span-1 md:col-span-2 bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col md:flex-row group hover:border-outline transition-colors">
+<div class="w-full md:w-1/2 h-64 md:h-auto relative">
+<img class="w-full h-full object-cover" data-alt="A professional photograph of the Assemblywoman speaking at a polished wood podium during a town hall meeting. The lighting is bright and modern, illuminating an engaged audience in the background. The mood is authoritative yet accessible, reflecting official government communication." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_v6QBJUI6oEPBdYwzGvtYkZTlb2UtvtXSJVY11FxB-oCIs6KxsFLzefjRw4DwUh35mhNdoE3vPky1mY0vEyhvoehDjxDhoiK0fSbJ_VVJXwmU_4HStt1lDHJSDjJn-M0nnJoCZFdVwbXZFMMwarSw_5CFCf5iLN2OtlfrgSeg_PkNFxELU4L0d7We19mmRZ6o8EAgS0SFHvlCw1qdcyLT46DP-WeJpNSA5FcdjMgKwVJJR8MW_Dc2"/>
+</div>
+<div class="w-full md:w-1/2 p-6 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-stack-sm text-on-surface-variant">
+<span class="material-symbols-outlined icon-fill text-secondary">public</span>
+<span class="font-label-sm text-label-sm uppercase">Facebook • 2h ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm group-hover:text-secondary transition-colors">Town Hall: Discussing Infrastructure Investments</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md line-clamp-4">
+                                Thank you to everyone who joined our town hall this morning. We discussed critical investments in local infrastructure, focusing on repairing main street arteries and improving public transit accessibility. Community feedback is vital to shaping this legislation.
+                            </p>
+</div>
+<a class="font-label-md text-label-md text-secondary hover:underline inline-flex items-center gap-1" href="#">
+                            Read full post <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Standard Feed Card 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg p-6 flex flex-col hover:border-outline transition-colors">
+<div class="flex items-center gap-2 mb-stack-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary-container">flutter_dash</span>
+<span class="font-label-sm text-label-sm uppercase">X (Twitter) • 4h ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-stack-md flex-grow">
+                        The new education funding bill has officially passed the committee phase. This is a crucial step towards ensuring smaller class sizes and better resources for our public school teachers. Next stop: floor vote. #EducationFirst #LocalGov
+                    </p>
+<div class="flex items-center gap-4 text-on-surface-variant border-t border-outline-variant pt-stack-sm">
+<span class="flex items-center gap-1 font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">chat_bubble</span> 42</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">repeat</span> 128</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">favorite</span> 405</span>
+</div>
+</article>
+<!-- Standard Feed Card 2 (Image) -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:border-outline transition-colors">
+<div class="h-48 relative">
+<img class="w-full h-full object-cover" data-alt="A bright, clear photograph showing volunteers and community members planting trees in a local park on a sunny day. The style is documentary and uplifting, capturing civic engagement and environmental action. The colors are natural and vibrant." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAycUV-XMo-KcyABlcQ9qHndOONZfP5yCiE6T6cKg6K7g2SUzwn9mVJ4si4dCb5Y_y7ueHM095Hxr3EBKOzG_2raE_Zd4sZXQlOyt6qEbchVu8vuPRrTotKsLChnG635D-_3E_M2lMnt-gogXPlkD6hhKv3U4vojglLxvdc-aS1qOodBVoXiz_lUZIxJ5BHjo9eN3fO-38AzPRV6ONMOotpjNMjnK2fZnlQmOUwt9t4B15kKVV-zQ0-"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex items-center gap-2 mb-stack-sm text-on-surface-variant">
+<span class="material-symbols-outlined icon-fill text-tertiary">photo_camera</span>
+<span class="font-label-sm text-label-sm uppercase">Instagram • 1d ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-stack-md flex-grow">
+                            Incredible turnout at the District 4 Community Clean-up today! Over 200 volunteers came together to beautify Centennial Park. Civic pride in action. 🌳✨
+                        </p>
+</div>
+</article>
+<!-- Standard Feed Card 3 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg p-6 flex flex-col hover:border-outline transition-colors">
+<div class="flex items-center gap-2 mb-stack-sm text-error">
+<span class="material-symbols-outlined icon-fill">campaign</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">Urgent Alert • 1d ago</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-stack-sm">Weather Advisory: Office Closure</h3>
+<p class="font-body-md text-body-md text-on-surface mb-stack-md flex-grow">
+                        Due to severe weather conditions expected tomorrow, the district physical office will be closed. Staff will be operating remotely and will remain available via email and phone. Stay safe!
+                    </p>
+</article>
+</div>
+</div>
+<!-- Load More Action -->
+<div class="flex justify-center mt-section-gap">
+<button class="border border-primary text-primary hover:bg-surface-container-low font-label-md text-label-md py-3 px-8 rounded-DEFAULT transition-colors h-[44px] flex items-center gap-2">
+                Load More Updates <span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-tertiary-container w-full border-t border-outline-variant dark:border-outline">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center gap-stack-lg md:gap-0">
+<div class="font-headline-sm text-headline-sm text-on-primary-container text-center md:text-left">
+                Assemblywoman Official
+            </div>
+<div class="flex flex-wrap justify-center gap-4 md:gap-6">
+<a class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-on-primary-container hover:underline transition-all font-label-md text-label-md" href="#">Privacy Policy</a>
+<a class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-on-primary-container hover:underline transition-all font-label-md text-label-md" href="#">Accessibility Statement</a>
+<a class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-on-primary-container hover:underline transition-all font-label-md text-label-md" href="#">Newsletter Signup</a>
+<a class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-on-primary-container hover:underline transition-all font-label-md text-label-md" href="#">Office Locations</a>
+</div>
+<div class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant font-body-md text-body-md text-center md:text-right">
+                © 2024 Office of the Assemblywoman. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

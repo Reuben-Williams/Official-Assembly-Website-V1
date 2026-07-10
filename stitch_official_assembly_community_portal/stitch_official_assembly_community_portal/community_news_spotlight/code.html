@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Assemblywoman Official - Community News &amp; Spotlight</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f9f9f9",
+                        "outline-variant": "#c4c6cf",
+                        "on-surface": "#1a1c1c",
+                        "primary-container": "#002147",
+                        "on-background": "#1a1c1c",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#1c2228",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c1c7ce",
+                        "on-tertiary-fixed": "#161c22",
+                        "surface-container": "#eeeeee",
+                        "inverse-on-surface": "#f0f1f1",
+                        "secondary-container": "#659dfe",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#003370",
+                        "surface-variant": "#e2e2e2",
+                        "primary-fixed": "#d6e3ff",
+                        "inverse-primary": "#aec7f6",
+                        "surface-tint": "#465f88",
+                        "surface-dim": "#dadada",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#aec7f6",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#001b3d",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#708ab5",
+                        "inverse-surface": "#2f3131",
+                        "primary": "#000a1e",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#dde3eb",
+                        "on-secondary-fixed": "#001a40",
+                        "tertiary": "#060b10",
+                        "surface-container-high": "#e8e8e8",
+                        "on-surface-variant": "#44474e",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "secondary-fixed-dim": "#acc7ff",
+                        "surface-container-low": "#f3f3f4",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary-container": "#838990",
+                        "background": "#f9f9f9",
+                        "outline": "#74777f",
+                        "on-secondary-fixed-variant": "#004491",
+                        "secondary-fixed": "#d7e2ff",
+                        "on-tertiary-fixed-variant": "#41474e",
+                        "secondary": "#115cb9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "section-gap": "80px",
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
+                        "container-max": "1280px",
+                        "margin-desktop": "48px",
+                        "stack-sm": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "title-lg": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "label-md": ["Inter"],
+                        "headline-sm": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.surface'); color: theme('colors.on-surface'); }
+    </style>
+</head>
+<body class="font-body-md text-body-md pt-20">
+<!-- TopNavBar -->
+<header class="bg-surface border-b border-outline-variant fixed top-0 w-full z-50">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<div class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary-container">
+                Assemblywoman Official
+            </div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors duration-200 px-3 py-2 rounded" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors duration-200 px-3 py-2 rounded" href="#">About</a>
+<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1 px-3 py-2" href="#">News</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors duration-200 px-3 py-2 rounded" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors duration-200 px-3 py-2 rounded" href="#">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors duration-200 px-3 py-2 rounded" href="#">Voting</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="relative hidden md:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 border border-outline-variant rounded bg-surface-container-lowest text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary font-body-md text-body-md" placeholder="Search..." type="text"/>
+</div>
+<button class="font-label-md text-label-md text-primary hover:bg-surface-container-low transition-colors duration-200 px-3 py-2 rounded">ES/EN</button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Main News Feed (9 cols) -->
+<section class="md:col-span-8 lg:col-span-9 flex flex-col gap-stack-lg">
+<div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm">
+<h1 class="font-headline-md text-headline-md text-primary-container">Community News &amp; Updates</h1>
+<div class="relative w-64 hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-10 pr-4 py-2 border border-outline-variant rounded bg-surface-container-lowest text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary font-body-md text-body-md" placeholder="Search News Archive..." type="text"/>
+</div>
+</div>
+<!-- Urgent Alert -->
+<div class="bg-error-container border border-error p-4 rounded flex gap-4 items-start">
+<span class="material-symbols-outlined text-on-error-container mt-1">warning</span>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-error-container mb-1">Emergency Road Closure: Route 9 Southbound</h3>
+<p class="font-body-md text-body-md text-on-error-container">Due to severe flooding, Route 9 Southbound is closed from Main St to Oak Ave until further notice. Please seek alternate routes.</p>
+</div>
+</div>
+<!-- News Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- Featured Article -->
+<article class="col-span-1 lg:col-span-2 bg-surface-container-lowest border border-outline-variant rounded overflow-hidden flex flex-col sm:flex-row group cursor-pointer hover:bg-surface-container-low transition-colors">
+<img class="w-full sm:w-1/3 object-cover min-h-[200px]" data-alt="A professional photograph of an assemblywoman speaking at a town hall meeting. The lighting is bright and even, capturing a serious yet engaging mood. The setting is a modern community center with diverse citizens in the audience. The color palette features institutional blues, crisp whites, and natural skin tones, aligning with a trustworthy, official aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxEA4eQISABz2bEg24MU-QTWu8HFkKQUByaQH7ON_91SUdHEKLBt_r1NdDQdiaVJ5V2ORw_OPTLkp3NIX1ADtZTa1hKx46dOQTmbXiWtDX5i15bWU227UNeI8lnrtAKV-RiasYKuDkHJIktByIThx-2fMnc6zfyVXbDSOjFcDoYvSRK3sgGZZJvwL6NoRmpUITh8FPaVSII_n_CGKOrpN0fp51wN7eUIdaEaA7qxEf1mLsWq3cNBFM"/>
+<div class="p-6 flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-secondary mb-2 uppercase tracking-wider">Press Release</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-3 group-hover:text-secondary transition-colors">New Infrastructure Bill Passes Committee, Promising Local Upgrades</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">The recently proposed infrastructure bill has successfully passed the initial committee phase, allocating funds for critical bridge repairs in our district.</p>
+<span class="font-label-md text-label-md text-outline mt-auto">October 24, 2023</span>
+</div>
+</article>
+<!-- Standard Articles -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded p-6 hover:bg-surface-container-low transition-colors cursor-pointer group">
+<span class="font-label-sm text-label-sm text-secondary mb-2 block uppercase tracking-wider">Community Event</span>
+<h3 class="font-title-lg text-title-lg text-primary mb-2 group-hover:text-secondary transition-colors">Annual Fall Festival Scheduled for Next Weekend</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 line-clamp-3">Join us at Centennial Park for the annual Fall Festival. Enjoy local vendors, family activities, and community resources.</p>
+<span class="font-label-md text-label-md text-outline">October 22, 2023</span>
+</article>
+<article class="bg-surface-container-lowest border border-outline-variant rounded p-6 hover:bg-surface-container-low transition-colors cursor-pointer group">
+<span class="font-label-sm text-label-sm text-secondary mb-2 block uppercase tracking-wider">Legislative Update</span>
+<h3 class="font-title-lg text-title-lg text-primary mb-2 group-hover:text-secondary transition-colors">Town Hall Recap: Property Tax Relief Discussions</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 line-clamp-3">A summary of last night's town hall meeting focusing on new property tax relief programs available to seniors and veterans.</p>
+<span class="font-label-md text-label-md text-outline">October 20, 2023</span>
+</article>
+</div>
+<button class="self-center mt-stack-md px-6 py-3 border border-primary-container text-primary-container font-label-md text-label-md rounded hover:bg-surface-container-highest transition-colors">Load More News</button>
+</section>
+<!-- Sidebar / Spotlight (3 cols) -->
+<aside class="md:col-span-4 lg:col-span-3 flex flex-col gap-stack-lg mt-section-gap md:mt-0">
+<div class="bg-surface-container border border-outline-variant rounded p-6">
+<h3 class="font-headline-sm text-headline-sm text-primary-container border-b border-outline-variant pb-2 mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">star</span>
+                    Community Spotlight
+                </h3>
+<div class="flex flex-col gap-stack-md">
+<!-- Spotlight Item -->
+<div class="flex items-start gap-4">
+<img class="w-16 h-16 rounded object-cover border border-outline-variant" data-alt="A dignified portrait of an older male military veteran wearing a subtle lapel pin. The background is a softly blurred modern office environment. The lighting is warm and respectful, highlighting his experienced features. The color palette emphasizes deep navy blues, warm grays, and natural skin tones to convey honor and official recognition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmjZiRXS_PH9kwxZCzN3kXlxLuvYqulzhzPThbqPhuzgGPUb40qbVt6_-v2qGKazDiLvyzuFrGwutNVf3tn7WWKjKC82RMYlJQVqtQdHlAGiuCgbeNJbTMw8xC-_T2P7ZD3k4gldv--54M5wGBdz2DykmovU1KgGBScsnHG89muLbrEVFUWghRmXq7h-5OE6iilI7KFPKLxsb8p02vpQiB0vIlUykfm_O9USxpeqvXc5T62nkT1JeU"/>
+<div>
+<span class="font-label-sm text-label-sm text-secondary block mb-1">Veteran of the Month</span>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-1" style="font-size: 16px; line-height: 22px;">Sgt. James Miller</h4>
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">Read Story →</a>
+</div>
+</div>
+<hr class="border-outline-variant"/>
+<!-- Spotlight Item -->
+<div class="flex items-start gap-4">
+<img class="w-16 h-16 rounded object-cover border border-outline-variant" data-alt="A portrait of a cheerful female elementary school teacher holding a book, standing in a bright, modern classroom setting. Natural sunlight streams in, creating a positive and inspiring mood. The color palette includes soft blues, warm whites, and subtle earthy tones, reflecting an educational, professional, and uplifting aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpQ39x62mtWKoTH4nWKJL7j3yobhTPL7ov87hrDLWJPcPhtVclq3hI7Qjra2W-r_WBQmXu-TnABD4rEE86exjxc_muXMXAB7okjHzpUcoBz8yuZArbqccJGH_mf7PF4-4l7L1Lx5-NlnkUlCJvmzpfnqorKnhK-Zq54uUpMdULTecab51-H4b87gz2hx7gLBavtCBBtDTJCbseYs3r1aXp12eayxLJmURT7liHBk0C1KUkWR79cD1-"/>
+<div>
+<span class="font-label-sm text-label-sm text-secondary block mb-1">Teacher of the Month</span>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-1" style="font-size: 16px; line-height: 22px;">Sarah Jenkins</h4>
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">Read Story →</a>
+</div>
+</div>
+<hr class="border-outline-variant"/>
+<!-- Spotlight Item -->
+<div class="flex items-start gap-4">
+<img class="w-16 h-16 rounded object-cover border border-outline-variant" data-alt="A wide shot of a modern, inviting local cafe storefront on a sunny day. A small 'Open' sign hangs in the window. The lighting is bright and welcoming, conveying community commerce. The color palette features clean whites, warm brick tones, and institutional blue accents, matching the official, supportive brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJWtgdSbHPvGzF_ugARkoF92Bp0ozcwyl7-9LQwekv-c_SgSWmmS6k80xXs3amlR2X8VBanpxuPfAcznCTdfyZvfs55H94SKVUhNheJ_XsnqdM611w9P6uIlvDgUR7lwzfqMsFWKFE1oJSa3T_MUsXB8NXvYGf5IwSQuWSM0CdZH4gQ2ocHYKHGoMIRrssExZGmza989BHFkUdR3rf_L5gPVRB7Lg3gJx6pFphg5NiVUrxOqGEhZPD"/>
+<div>
+<span class="font-label-sm text-label-sm text-secondary block mb-1">Small Business Spotlight</span>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-1" style="font-size: 16px; line-height: 22px;">Main St. Coffee Roasters</h4>
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">Read Story →</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Links / Resources -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-6">
+<h3 class="font-title-lg text-title-lg text-primary-container mb-4">Quick Resources</h3>
+<ul class="flex flex-col gap-2">
+<li><a class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined text-outline">description</span> File a Constituent Request</a></li>
+<li><a class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined text-outline">calendar_month</span> Legislative Calendar</a></li>
+<li><a class="flex items-center gap-2 font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined text-outline">how_to_vote</span> Voter Registration Info</a></li>
+</ul>
+</div>
+</aside>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container text-on-primary-container w-full border-t border-outline-variant mt-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between gap-stack-lg md:gap-gutter">
+<div class="flex flex-col gap-stack-md">
+<div class="font-headline-sm text-headline-sm text-on-primary-container">
+                    Assemblywoman Official
+                </div>
+<p class="font-body-md text-body-md">
+                    © 2024 Office of the Assemblywoman. All rights reserved.
+                </p>
+</div>
+<nav class="flex flex-col sm:flex-row gap-4 sm:gap-gutter font-label-md text-label-md text-on-primary-fixed-variant">
+<a class="hover:text-on-primary-container hover:underline transition-all focus-visible:outline-2 focus-visible:outline-white" href="#">Privacy Policy</a>
+<a class="hover:text-on-primary-container hover:underline transition-all focus-visible:outline-2 focus-visible:outline-white" href="#">Accessibility Statement</a>
+<a class="hover:text-on-primary-container hover:underline transition-all focus-visible:outline-2 focus-visible:outline-white" href="#">Newsletter Signup</a>
+<a class="hover:text-on-primary-container hover:underline transition-all focus-visible:outline-2 focus-visible:outline-white" href="#">Office Locations</a>
+</nav>
+</div>
+</footer>
+</body></html>

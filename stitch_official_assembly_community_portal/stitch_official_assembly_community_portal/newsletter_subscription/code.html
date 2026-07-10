@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Newsletter Signup - Assemblywoman Official</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#f9f9f9",
+                      "on-secondary": "#ffffff",
+                      "surface-variant": "#e2e2e2",
+                      "on-secondary-fixed-variant": "#004491",
+                      "inverse-primary": "#aec7f6",
+                      "on-secondary-container": "#003370",
+                      "on-error-container": "#93000a",
+                      "tertiary-container": "#1c2228",
+                      "surface-container-low": "#f3f3f4",
+                      "on-primary-fixed": "#001b3d",
+                      "tertiary-fixed": "#dde3eb",
+                      "primary-fixed-dim": "#aec7f6",
+                      "secondary-fixed-dim": "#acc7ff",
+                      "surface-tint": "#465f88",
+                      "primary-container": "#002147",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#44474e",
+                      "tertiary-fixed-dim": "#c1c7ce",
+                      "secondary-container": "#659dfe",
+                      "on-primary": "#ffffff",
+                      "surface-bright": "#f9f9f9",
+                      "outline": "#74777f",
+                      "outline-variant": "#c4c6cf",
+                      "surface-container": "#eeeeee",
+                      "on-primary-container": "#708ab5",
+                      "error-container": "#ffdad6",
+                      "surface-dim": "#dadada",
+                      "secondary": "#115cb9",
+                      "on-primary-fixed-variant": "#2d476f",
+                      "primary": "#000a1e",
+                      "on-background": "#1a1c1c",
+                      "inverse-surface": "#2f3131",
+                      "surface-container-highest": "#e2e2e2",
+                      "on-surface": "#1a1c1c",
+                      "on-error": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed": "#001a40",
+                      "on-tertiary-fixed-variant": "#41474e",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed": "#161c22",
+                      "tertiary": "#060b10",
+                      "surface": "#f9f9f9",
+                      "secondary-fixed": "#d7e2ff",
+                      "inverse-on-surface": "#f0f1f1",
+                      "primary-fixed": "#d6e3ff",
+                      "surface-container-high": "#e8e8e8",
+                      "on-tertiary-container": "#838990"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "stack-sm": "8px",
+                      "stack-lg": "32px",
+                      "section-gap": "80px",
+                      "margin-mobile": "16px",
+                      "container-max": "1280px",
+                      "margin-desktop": "48px",
+                      "stack-md": "16px"
+              },
+              "fontFamily": {
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "title-lg": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "headline-sm": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "title-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "60px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-family: 'Material Symbols Outlined';
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;
+          line-height: 1;
+          letter-spacing: normal;
+          text-transform: none;
+          display: inline-block;
+          white-space: nowrap;
+          word-wrap: normal;
+          direction: ltr;
+          -webkit-font-feature-settings: 'liga';
+          -webkit-font-smoothing: antialiased;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant shadow-none">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<!-- Brand -->
+<a class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary-container tracking-tight" href="#">
+                Assemblywoman Official
+            </a>
+<!-- Navigation Links (Hidden on Mobile) -->
+<nav aria-label="Main Navigation" class="hidden md:flex space-x-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 py-2" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 py-2" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 py-2" href="#">News</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 py-2" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 py-2" href="#">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 py-2" href="#">Voting</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center space-x-4">
+<button class="font-label-md text-label-md text-primary hover:bg-surface-container-low px-4 py-2 rounded transition-colors duration-200">
+                    ES/EN
+                </button>
+<button aria-label="Toggle Menu" class="md:hidden text-primary p-2 focus:outline-none focus:ring-2 focus:ring-secondary rounded">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-28 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full flex items-center justify-center">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter w-full max-w-5xl bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden">
+<!-- Left Side: Image/Context -->
+<div class="lg:col-span-5 relative h-64 lg:h-auto border-b lg:border-b-0 lg:border-r border-outline-variant">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A dignified, well-lit interior of a government assembly hall, featuring polished wood paneling and subtle natural light streaming through tall windows. The atmosphere is professional, serious, and transparent, consistent with official legislative communications. The color palette emphasizes rich navy blues, warm wood tones, and crisp white highlights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDsWvyvdmlJqSV1e0idYUpjsTwyJfyWnsHdSj1MPKNcEIuauZDRe9-4tuAEPJ_iYLTqGxbpRZMa4DEmrJZz4A-MMy1PnBxhzL0Eo9Q1CaUFILDsh9g8q2us_TRNCU_ZgQ9-lPpP6v0Yq43qhpu-LrtHkLPCx83Hj0O6McRBnlXlDemFJ_KFT6ZFJKvcZOwHBr4GMWeixTnijfZVHq3I9nf2FRgLpTJoXKRkHt1lXD8SyZKc2vtjxbtJ')"></div>
+<div class="absolute inset-0 bg-primary-container bg-opacity-80 flex flex-col justify-end p-stack-lg">
+<span class="material-symbols-outlined text-on-primary text-4xl mb-stack-sm" data-icon="mail">mail</span>
+<h2 class="font-headline-md text-headline-md text-on-primary mb-2">The Assembly Dispatch</h2>
+<p class="font-body-md text-body-md text-on-primary opacity-90">Weekly legislative updates, community resources, and district news delivered directly to your inbox.</p>
+</div>
+</div>
+<!-- Right Side: Signup Form -->
+<div class="lg:col-span-7 p-stack-lg md:p-margin-desktop">
+<div class="mb-stack-lg">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-stack-sm tracking-tight">Stay Informed</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Join our mailing list to receive official updates from the Assemblywoman's office regarding new legislation, upcoming town halls, and critical community services.
+                    </p>
+</div>
+<form action="#" class="space-y-stack-md" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2 uppercase tracking-wider" for="first-name">First Name</label>
+<input class="w-full h-[44px] px-3 bg-surface-bright border border-outline focus:border-secondary focus:ring-2 focus:ring-secondary rounded transition-shadow text-body-md text-on-surface" id="first-name" name="first-name" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2 uppercase tracking-wider" for="last-name">Last Name</label>
+<input class="w-full h-[44px] px-3 bg-surface-bright border border-outline focus:border-secondary focus:ring-2 focus:ring-secondary rounded transition-shadow text-body-md text-on-surface" id="last-name" name="last-name" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2 uppercase tracking-wider" for="email">Email Address</label>
+<input class="w-full h-[44px] px-3 bg-surface-bright border border-outline focus:border-secondary focus:ring-2 focus:ring-secondary rounded transition-shadow text-body-md text-on-surface" id="email" name="email" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2 uppercase tracking-wider" for="zip">Zip Code</label>
+<input class="w-full md:w-1/2 h-[44px] px-3 bg-surface-bright border border-outline focus:border-secondary focus:ring-2 focus:ring-secondary rounded transition-shadow text-body-md text-on-surface" id="zip" name="zip" placeholder="e.g. 12345" required="" type="text"/>
+<p class="mt-2 font-label-sm text-label-sm text-on-surface-variant">Helps us tailor news to your specific neighborhood.</p>
+</div>
+<div class="flex items-start mt-stack-md">
+<div class="flex items-center h-5">
+<input class="w-4 h-4 text-secondary bg-surface-bright border-outline rounded focus:ring-secondary" id="consent" name="consent" required="" type="checkbox"/>
+</div>
+<div class="ml-3 text-sm">
+<label class="font-body-md text-body-md text-on-surface-variant" for="consent">
+                                By subscribing, you agree to our 
+                                <a class="text-secondary hover:underline underline-offset-2" href="#">Privacy Policy</a> 
+                                and consent to receive email communications from the Office of the Assemblywoman.
+                            </label>
+</div>
+</div>
+<div class="pt-stack-md">
+<button class="w-full md:w-auto min-h-[44px] px-8 bg-secondary hover:bg-on-secondary-container text-on-primary font-label-md text-label-md rounded shadow-sm hover:shadow-md transition-all duration-200 flex items-center justify-center gap-2" type="submit">
+<span>Subscribe</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary-container border-t border-outline-variant mt-auto">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-stack-md">
+<div class="flex flex-col gap-2">
+<span class="font-headline-sm text-headline-sm text-on-primary-container">Assemblywoman Official</span>
+<span class="font-body-md text-body-md text-on-primary-container opacity-80">© 2024 Office of the Assemblywoman. All rights reserved.</span>
+</div>
+<nav aria-label="Footer Navigation" class="flex flex-wrap gap-4 md:gap-8">
+<a class="font-label-md text-label-md text-on-primary-fixed-variant hover:text-on-primary-container hover:underline transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-primary-fixed-variant hover:text-on-primary-container hover:underline transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" href="#">Accessibility Statement</a>
+<a aria-current="page" class="font-label-md text-label-md text-on-primary-container underline transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" href="#">Newsletter Signup</a>
+<a class="font-label-md text-label-md text-on-primary-fixed-variant hover:text-on-primary-container hover:underline transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" href="#">Office Locations</a>
+</nav>
+</div>
+</footer>
+</body></html>

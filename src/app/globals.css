@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f9f9f9;
+  color: #1a1c1c;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+.material-symbols-outlined {
+  direction: ltr;
+  display: inline-block;
+  font-family: "Material Symbols Outlined";
+  font-feature-settings: "liga";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.material-symbols-outlined.fill {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.ticker-wrap {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+}
+
+.ticker {
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-name: ticker;
+  animation-timing-function: linear;
+  display: inline-block;
+  padding-right: 100%;
+  white-space: nowrap;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-item {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.glass-card {
+  background: rgb(255 255 255 / 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(222 226 230 / 0.5);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid #115cb9;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 640px) {
+  main section:first-of-type .flex.gap-4 {
+    flex-direction: column;
+  }
+
+  main section:first-of-type .flex.gap-4 button {
+    width: 100%;
+  }
+}

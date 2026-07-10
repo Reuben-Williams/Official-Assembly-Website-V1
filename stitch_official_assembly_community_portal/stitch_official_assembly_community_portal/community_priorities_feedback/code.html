@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Community Feedback &amp; Survey - Assemblywoman Official</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#002147",
+                        "outline-variant": "#c4c6cf",
+                        "secondary-container": "#659dfe",
+                        "on-tertiary-container": "#838990",
+                        "on-primary-fixed": "#001b3d",
+                        "surface-container-high": "#e8e8e8",
+                        "on-surface": "#1a1c1c",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#1c2228",
+                        "tertiary-fixed-dim": "#c1c7ce",
+                        "surface-tint": "#465f88",
+                        "surface-container-low": "#f3f3f4",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#41474e",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-secondary-fixed-variant": "#004491",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#708ab5",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface": "#f9f9f9",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#115cb9",
+                        "surface-dim": "#dadada",
+                        "primary": "#000a1e",
+                        "on-secondary-fixed": "#001a40",
+                        "background": "#f9f9f9",
+                        "primary-fixed-dim": "#aec7f6",
+                        "on-tertiary-fixed": "#161c22",
+                        "inverse-primary": "#aec7f6",
+                        "secondary-fixed": "#d7e2ff",
+                        "on-surface-variant": "#44474e",
+                        "on-secondary-container": "#003370",
+                        "tertiary": "#060b10",
+                        "outline": "#74777f",
+                        "surface-container": "#eeeeee",
+                        "inverse-surface": "#2f3131",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#dde3eb",
+                        "primary-fixed": "#d6e3ff",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#acc7ff",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "stack-lg": "32px",
+                        "margin-desktop": "48px",
+                        "stack-md": "16px",
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "section-gap": "80px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "title-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-sm": ["Playfair Display"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #f9f9f9; color: #1a1c1c; font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .material-symbols-outlined.fill { font-variation-settings: 'FILL' 1; }
+        
+        /* Form Element Styling */
+        input[type="text"], input[type="email"], select, textarea {
+            border: 1px solid #c4c6cf;
+            padding: 12px;
+            border-radius: 0.125rem;
+            width: 100%;
+            background-color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            color: #1a1c1c;
+            transition: border-color 0.2s;
+        }
+        input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+            outline: 2px solid #115cb9;
+            outline-offset: -1px;
+            border-color: transparent;
+        }
+        
+        input[type="radio"], input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #c4c6cf;
+            accent-color: #115cb9;
+            cursor: pointer;
+        }
+        
+        label.radio-label, label.checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            color: #1a1c1c;
+        }
+        
+        /* Survey Progress Bar */
+        .progress-container { width: 100%; background-color: #e2e2e2; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 32px; }
+        .progress-bar { height: 100%; background-color: #115cb9; width: 25%; transition: width 0.3s ease; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col pt-20">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface dark:bg-surface-container border-b border-outline-variant dark:border-outline">
+<div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20">
+<!-- Brand -->
+<a class="font-display-lg text-display-lg text-primary-container dark:text-primary-fixed hover:bg-surface-container-low transition-colors duration-200 px-2 py-1 rounded" href="#">
+                Assemblywoman Official
+            </a>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex items-center gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 px-3 py-2 rounded" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 px-3 py-2 rounded" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 px-3 py-2 rounded" href="#">News</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 px-3 py-2 rounded" href="#">Services</a>
+<!-- Active Item: Assuming Survey falls under Contact or Services, but letting Contact be active as it's feedback -->
+<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1 px-3 py-2 hover:bg-surface-container-low transition-colors duration-200" href="#">Contact</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 px-3 py-2 rounded" href="#">Voting</a>
+</div>
+<!-- Trailing Action -->
+<button class="font-label-md text-label-md text-on-surface-variant border border-outline-variant px-4 py-2 rounded hover:bg-surface-container-low transition-colors duration-200">
+                ES/EN
+            </button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow max-w-container-max mx-auto w-full px-margin-mobile md:px-margin-desktop py-section-gap">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="mb-stack-lg">
+<ol class="flex items-center space-x-2 font-label-md text-label-md text-on-surface-variant">
+<li><a class="hover:text-primary" href="#">Home</a></li>
+<li><span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span></li>
+<li><a class="hover:text-primary" href="#">Contact</a></li>
+<li><span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span></li>
+<li aria-current="page" class="text-on-surface font-semibold">2024 Community Survey</li>
+</ol>
+</nav>
+<!-- Page Header -->
+<header class="mb-stack-lg md:mb-section-gap max-w-3xl">
+<h1 class="font-display-lg text-display-lg text-primary mb-stack-sm">2024 Community Priorities Survey</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Your voice directs our legislative focus. Take 5 minutes to share your priorities for our district's future regarding public safety, infrastructure, education, and housing.</p>
+</header>
+<!-- Grid Layout: Sidebar (Why it matters) + Main Content (Survey) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Sidebar: Context & Info (3 cols) -->
+<aside class="lg:col-span-3 order-2 lg:order-1 flex flex-col gap-stack-lg">
+<div class="bg-surface-container-low p-stack-md rounded border border-outline-variant">
+<h3 class="font-title-lg text-title-lg text-primary-container mb-stack-sm flex items-center gap-2">
+<span class="material-symbols-outlined fill text-secondary">forum</span>
+                        Why Your Voice Matters
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                        The results of this survey directly inform the bills we introduce and the budget requests we advocate for in the upcoming legislative session.
+                    </p>
+<div class="h-px bg-outline-variant w-full mb-stack-md"></div>
+<h4 class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider mb-2">Past Impact</h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-1">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Secured $2M in park funding based on the 2022 survey.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-1">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Introduced Assembly Bill 104 to address local traffic concerns.</span>
+</li>
+</ul>
+</div>
+<!-- Decorative Image / Graphic representation of community -->
+<div class="bg-cover bg-center w-full h-48 rounded border border-outline-variant hidden lg:block" data-alt="A bright, professional photograph of diverse community members gathering in a modern town hall setting, engaged in discussion. The lighting is natural and inviting, conveying a sense of civic duty and collaboration, fitting a governmental style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBLE7q1ZFgkAh_msDtvxDCIq5R3VpPe0cQBe8Kb1JL406iPsLbcnFCv4FW3L5r1QDyRWBW4wF4VduAOb2QqMqprT-fXFHHecFTw4nD1jfiXdSrX0P3jE3svfJuuFFcpvwlRNjCmcqMkMB8aHzydPpeI5JuQsMv-C0KaL-_4_-MUTwWLdmdsGSbQzM3WEiGcXWYTJHiwEWDZcoyrNZWdUtt3BtLcU_-gbCQ0qZz9gTRMbBaleSVwoVzu')"></div>
+</aside>
+<!-- Main Content: Survey Form (9 cols) -->
+<div class="lg:col-span-9 order-1 lg:order-2">
+<div class="bg-white border border-outline-variant rounded p-stack-lg lg:p-margin-desktop shadow-sm">
+<div class="flex justify-between items-end mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Section 1 of 4: Demographics</span>
+<span class="font-label-sm text-label-sm text-primary">25% Complete</span>
+</div>
+<div class="progress-container">
+<div class="progress-bar" id="survey-progress"></div>
+</div>
+<form action="#" id="community-survey" method="POST">
+<!-- Section 1: Demographics -->
+<div class="survey-section" id="section-1">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-stack-md border-b border-outline-variant pb-2">Resident Information</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">Providing your information helps us verify residency in the district, though anonymous responses are also accepted.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md mb-stack-lg">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="first_name">First Name</label>
+<input id="first_name" name="first_name" placeholder="Jane" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="last_name">Last Name</label>
+<input id="last_name" name="last_name" placeholder="Doe" type="text"/>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="email">Email Address</label>
+<input id="email" name="email" placeholder="jane.doe@example.com" type="email"/>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="neighborhood">Neighborhood / Zip Code *</label>
+<select id="neighborhood" name="neighborhood" required="">
+<option disabled="" selected="" value="">Select your area</option>
+<option value="downtown">Downtown District</option>
+<option value="northside">Northside</option>
+<option value="south_valley">South Valley</option>
+<option value="east_end">East End</option>
+<option value="west_hills">West Hills</option>
+<option value="other">Other</option>
+</select>
+</div>
+</div>
+<div class="flex justify-end mt-stack-lg pt-stack-md border-t border-outline-variant">
+<button class="bg-secondary text-white font-label-md text-label-md px-6 py-3 rounded hover:bg-on-secondary-container transition-colors shadow-sm hover:shadow flex items-center gap-2" onclick="nextSection(2)" type="button">
+                                    Next Section
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Add subsequent sections here in a real implementation. For demo, showing the structure. -->
+<div class="survey-section hidden" id="section-2">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-stack-md border-b border-outline-variant pb-2">Public Safety &amp; Infrastructure</h2>
+<!-- Form fields would go here -->
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary-container dark:bg-tertiary-container border-t border-outline-variant dark:border-outline mt-auto">
+<div class="max-w-container-max mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<div class="font-headline-sm text-headline-sm text-on-primary-container">
+                Assemblywoman Official
+            </div>
+<div class="flex flex-wrap justify-center gap-stack-md">
+<a class="font-label-md text-label-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-on-primary-container hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-on-primary-container hover:underline transition-all" href="#">Accessibility Statement</a>
+<a class="font-label-md text-label-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-on-primary-container hover:underline transition-all" href="#">Newsletter Signup</a>
+<a class="font-label-md text-label-md text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-on-primary-container hover:underline transition-all" href="#">Office Locations</a>
+</div>
+<div class="font-body-md text-body-md text-on-primary-container text-center md:text-right">
+                © 2024 Office of the Assemblywoman. All rights reserved.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple script to handle section transitions (mockup)
+        function nextSection(sectionNum) {
+            // In a full implementation, this would hide current section and show next.
+            // For now, it just updates the progress bar visually to demonstrate interaction.
+            const progressBar = document.getElementById('survey-progress');
+            if(sectionNum === 2) {
+                progressBar.style.width = '50%';
+                // Add logic to hide section 1, show section 2
+            }
+        }
+    </script>
+</body></html>
