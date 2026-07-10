@@ -66,6 +66,36 @@ describe("prototype html rewrite", () => {
     expect(result).toContain("object-contain");
     expect(result).toContain("bg-contain bg-no-repeat");
   });
+
+  it("normalizes every page to the homepage navigation with the brand icon", () => {
+    const html = `
+      <!-- TopNavBar -->
+      <header class="bg-surface fixed top-0 w-full z-50 border-b border-outline-variant">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+          <a class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary-container" href="#">Assemblywoman Official</a>
+          <nav class="hidden md:flex items-center gap-gutter">
+            <a href="#">Home</a>
+            <a aria-current="page" href="#">About</a>
+          </nav>
+        </div>
+      </header>
+      <main>About page content</main>
+    `;
+
+    const result = rewritePrototypeHtml(html, {
+      activeSlug: "about",
+      basePath: "/Official-Assembly-Website-V1",
+    });
+
+    expect(result).toContain("<!-- TopNavBar -->");
+    expect(result).toContain("account_balance");
+    expect(result).toContain("<span>Assemblywoman Carmen Morales</span>");
+    expect(result).toContain('href="/Official-Assembly-Website-V1/about"');
+    expect(result).toContain('aria-current="page"');
+    expect(result).toContain("items-center gap-6");
+    expect(result).not.toContain("gap-gutter");
+    expect(result).not.toContain("font-display-lg-mobile");
+  });
 });
 
 describe("supabase client guard", () => {

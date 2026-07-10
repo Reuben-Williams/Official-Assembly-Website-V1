@@ -88,6 +88,15 @@ const routeByLabel = new Map([
   ["Learn More", "services"],
 ]);
 
+const topNavigationItems = [
+  { label: "Home", slug: "" },
+  { label: "About", slug: "about" },
+  { label: "News", slug: "news" },
+  { label: "Services", slug: "services" },
+  { label: "Contact", slug: "contact" },
+  { label: "Voting", slug: "voting" },
+];
+
 const prototypeRoot = path.join(
   process.cwd(),
   "stitch_official_assembly_community_portal",
@@ -117,6 +126,55 @@ export function getPrototypeBody(page: PrototypePage) {
   };
 }
 
+function pageHref(basePath: string, slug: string) {
+  return slug ? `${basePath}/${slug}` : `${basePath}/`;
+}
+
+function buildTopNavigation(activeSlug: string, basePath: string) {
+  const activeClasses =
+    "font-label-md text-label-md text-secondary dark:text-secondary-fixed border-b-2 border-secondary dark:border-secondary-fixed pb-1 hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2";
+  const inactiveClasses =
+    "font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-colors duration-200";
+
+  const links = topNavigationItems
+    .map((item) => {
+      const isActive = item.slug === activeSlug;
+      const ariaCurrent = isActive ? ' aria-current="page"' : "";
+
+      return `<a${ariaCurrent} class="${isActive ? activeClasses : inactiveClasses}" href="${pageHref(basePath, item.slug)}">${item.label}</a>`;
+    })
+    .join("\n");
+
+  return `<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface-container fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline">
+<div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20">
+<div class="font-headline-sm text-headline-sm text-primary-container dark:text-primary-fixed flex items-center gap-2">
+<span class="material-symbols-outlined text-4xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+<span>Assemblywoman Carmen Morales</span>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+${links}
+</nav>
+<div class="flex items-center gap-4">
+<button aria-label="Search" class="text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="font-label-md text-label-md text-primary dark:text-inverse-primary border border-outline-variant px-4 py-2 rounded hover:bg-surface-container-low transition-colors duration-200">ES/EN</button>
+<button aria-label="Menu" class="md:hidden text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>`;
+}
+
+function normalizeTopNavigation(html: string, activeSlug: string, basePath: string) {
+  return html.replace(
+    /<!-- TopNavBar(?: Component)? -->\s*<(header|nav)\b[\s\S]*?<\/\1>/,
+    buildTopNavigation(activeSlug, basePath),
+  );
+}
+
 export function rewritePrototypeHtml(
   html: string,
   options: { activeSlug: string; basePath?: string },
@@ -124,7 +182,7 @@ export function rewritePrototypeHtml(
   const basePath = options.basePath ?? "";
   let imageIndex = 0;
 
-  return html
+  return normalizeTopNavigation(html, options.activeSlug, basePath)
     .replaceAll("Assemblywoman Official", "Assemblywoman Carmen Morales")
     .replaceAll("Assemblywoman's", "Assemblywoman Morales'")
     .replaceAll("About the Assemblywoman", "About Assemblywoman Morales")
