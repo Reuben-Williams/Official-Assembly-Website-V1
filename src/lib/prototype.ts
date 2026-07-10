@@ -137,6 +137,9 @@ export function rewritePrototypeHtml(
       "font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary-container",
       "font-headline-sm text-headline-sm text-primary-container",
     )
+    .replace(/\bobject-cover\b/g, "object-contain")
+    .replace(/\bbg-cover\b/g, "bg-contain bg-no-repeat")
+    .replace(/\s*group-hover:scale-105\b/g, "")
     .replace(/src="https:\/\/lh3\.googleusercontent\.com\/aida-public\/[^"]+"/g, () => {
       const imageName = officialImages[imageIndex % officialImages.length];
       imageIndex += 1;

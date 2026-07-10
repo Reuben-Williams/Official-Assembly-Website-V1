@@ -48,6 +48,24 @@ describe("prototype html rewrite", () => {
     expect(result).toContain("Assemblywoman Carmen Morales");
     expect(result).toContain('href="/Official-Assembly-Website-V1/about"');
   });
+
+  it("rewrites image fit classes so prototype images are not cropped", () => {
+    const html = `
+      <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform">
+      <div class="bg-cover bg-center w-full h-48"></div>
+    `;
+
+    const result = rewritePrototypeHtml(html, {
+      activeSlug: "",
+      basePath: "",
+    });
+
+    expect(result).not.toContain("object-cover");
+    expect(result).not.toContain("bg-cover");
+    expect(result).not.toContain("group-hover:scale-105");
+    expect(result).toContain("object-contain");
+    expect(result).toContain("bg-contain bg-no-repeat");
+  });
 });
 
 describe("supabase client guard", () => {
