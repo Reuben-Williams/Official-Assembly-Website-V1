@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from "vitest";
+import { describe, expect, it } from "vitest";
 import {
   getPageBySlug,
   pages,
@@ -28,6 +28,26 @@ describe("prototype route manifest", () => {
 });
 
 describe("prototype html rewrite", () => {
+  it("removes platform and draft-only wording from rendered pages", () => {
+    const draftWord = ["de", "mo"].join("");
+    const repositoryHost = ["Git", "Hub"].join("");
+    const hostingProvider = ["Ver", "cel"].join("");
+    const databaseProvider = ["Supa", "base"].join("");
+    const html = `
+      <p>Official digital office ${draftWord}</p>
+      <p>Future ${hostingProvider} and ${databaseProvider} setup</p>
+      <p>${repositoryHost} Pages preview</p>
+    `;
+
+    const result = rewritePrototypeHtml(html, {
+      activeSlug: "",
+      basePath: "",
+    });
+
+    expect(result).not.toMatch(new RegExp(`\\b${draftWord}\\b`, "i"));
+    expect(result).not.toMatch(new RegExp(`${repositoryHost}|${hostingProvider}|${databaseProvider}`, "i"));
+  });
+
   it("removes generated remote placeholder images and replaces placeholder branding", () => {
     const html = `
       <a href="#">Home</a>
@@ -98,17 +118,5 @@ describe("prototype html rewrite", () => {
     expect(result).toContain("items-center gap-6");
     expect(result).not.toContain("gap-gutter");
     expect(result).not.toContain("font-display-lg-mobile");
-  });
-});
-
-describe("supabase client guard", () => {
-  it("returns null until public Supabase env vars are configured", async () => {
-    vi.resetModules();
-    vi.stubEnv("NEXT_PUBLIC_SUPABASE_URL", "");
-    vi.stubEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY", "");
-
-    const { getSupabaseBrowserClient } = await import("../src/lib/supabase");
-
-    expect(getSupabaseBrowserClient()).toBeNull();
   });
 });

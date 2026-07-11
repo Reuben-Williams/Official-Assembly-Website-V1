@@ -1,5 +1,4 @@
-const isGithubPages = process.env.NEXT_PUBLIC_GITHUB_PAGES === "true";
-const repoName = "Official-Assembly-Website-V1";
+const staticBasePath = process.env.NEXT_PUBLIC_STATIC_BASE_PATH ?? "";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,8 +7,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isGithubPages ? `/${repoName}` : "",
-  assetPrefix: isGithubPages ? `/${repoName}/` : "",
+  basePath: staticBasePath,
+  assetPrefix: staticBasePath ? `${staticBasePath}/` : "",
 };
 
 export default nextConfig;

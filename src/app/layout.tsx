@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | Assemblywoman Carmen Morales",
   },
   description:
-    "Official digital office demo for Assemblywoman Carmen Morales, including constituent services, community updates, voting information, and contact resources.",
+    "Official digital office for Assemblywoman Carmen Morales, including constituent services, community updates, voting information, and contact resources.",
 };
 
 export default function RootLayout({

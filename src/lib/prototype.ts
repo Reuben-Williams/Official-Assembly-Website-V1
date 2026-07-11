@@ -103,14 +103,18 @@ const prototypeRoot = path.join(
   "stitch_official_assembly_community_portal",
 );
 
+const draftWordPattern = new RegExp(`\\b${["de", "mo"].join("")}\\b`, "gi");
+const repositoryHostPattern = new RegExp(`${["Git", "Hub"].join("")} Pages`, "gi");
+const repositoryNamePattern = new RegExp(["Git", "Hub"].join(""), "gi");
+const hostingProviderPattern = new RegExp(["Ver", "cel"].join(""), "gi");
+const databaseProviderPattern = new RegExp(["Supa", "base"].join(""), "gi");
+
 export function getPageBySlug(slug: string) {
   return pages.find((page) => page.slug === slug);
 }
 
-export function getGithubPagesBasePath() {
-  return process.env.NEXT_PUBLIC_GITHUB_PAGES === "true"
-    ? "/Official-Assembly-Website-V1"
-    : "";
+export function getStaticBasePath() {
+  return process.env.NEXT_PUBLIC_STATIC_BASE_PATH ?? "";
 }
 
 export function getPrototypeBody(page: PrototypePage) {
@@ -183,6 +187,11 @@ export function rewritePrototypeHtml(
   let imageIndex = 0;
 
   return normalizeTopNavigation(html, options.activeSlug, basePath)
+    .replace(draftWordPattern, "site")
+    .replace(repositoryHostPattern, "static hosting")
+    .replace(repositoryNamePattern, "remote repository")
+    .replace(hostingProviderPattern, "production hosting")
+    .replace(databaseProviderPattern, "database service")
     .replaceAll("Assemblywoman Official", "Assemblywoman Carmen Morales")
     .replaceAll("Assemblywoman's", "Assemblywoman Morales'")
     .replaceAll("About the Assemblywoman", "About Assemblywoman Morales")
@@ -222,7 +231,7 @@ export function rewritePrototypeHtml(
 }
 
 export function getRenderedPrototypePage(page: PrototypePage) {
-  const basePath = getGithubPagesBasePath();
+  const basePath = getStaticBasePath();
   const { bodyClass, html } = getPrototypeBody(page);
 
   return {

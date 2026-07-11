@@ -4,13 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/sanitize-static-output.mjs",
     "start": "next start",
     "test": "vitest run",
     "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.84.0",
     "next": "^15.5.7",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
