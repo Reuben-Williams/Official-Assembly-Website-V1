@@ -148,10 +148,10 @@ function buildTopNavigation(activeSlug: string, basePath: string) {
   return `<!-- TopNavBar -->
 <header class="bg-surface dark:bg-surface-container fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline">
 <div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20">
-<div class="font-headline-sm text-headline-sm text-primary-container dark:text-primary-fixed flex items-center gap-2">
+<a class="font-headline-sm text-headline-sm text-primary-container dark:text-primary-fixed flex items-center gap-2" href="${pageHref(basePath, "")}">
 <span class="material-symbols-outlined text-4xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">account_balance</span>
 <span>Assemblywoman Carmen Morales</span>
-</div>
+</a>
 <nav class="hidden md:flex items-center gap-6">
 ${links}
 </nav>

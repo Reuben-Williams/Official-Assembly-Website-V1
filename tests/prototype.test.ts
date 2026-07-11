@@ -90,6 +90,9 @@ describe("prototype html rewrite", () => {
     expect(result).toContain("<!-- TopNavBar -->");
     expect(result).toContain("account_balance");
     expect(result).toContain("<span>Assemblywoman Carmen Morales</span>");
+    expect(result).toContain(
+      '<a class="font-headline-sm text-headline-sm text-primary-container dark:text-primary-fixed flex items-center gap-2" href="/Official-Assembly-Website-V1/">',
+    );
     expect(result).toContain('href="/Official-Assembly-Website-V1/about"');
     expect(result).toContain('aria-current="page"');
     expect(result).toContain("items-center gap-6");
