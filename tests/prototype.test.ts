@@ -4,6 +4,7 @@ import {
   pages,
   rewritePrototypeHtml,
 } from "../src/lib/prototype";
+import { translateText } from "../src/lib/translations";
 
 describe("prototype route manifest", () => {
   it("keeps a static route for every prototype screen", () => {
@@ -118,5 +119,69 @@ describe("prototype html rewrite", () => {
     expect(result).toContain("items-center gap-6");
     expect(result).not.toContain("gap-gutter");
     expect(result).not.toContain("font-display-lg-mobile");
+  });
+
+  it("adds a site-wide language control to the shared navigation", () => {
+    const html = `
+      <!-- TopNavBar -->
+      <header>
+        <a href="#">Assemblywoman Official</a>
+        <nav><a href="#">Home</a></nav>
+      </header>
+      <main>Homepage content</main>
+    `;
+
+    const result = rewritePrototypeHtml(html, {
+      activeSlug: "",
+      basePath: "",
+    });
+
+    expect(result).toContain('data-language-toggle');
+    expect(result).toContain('data-language-label');
+    expect(result).toContain('aria-label="Translate site to Spanish"');
+    expect(result).toContain(">Español<");
+  });
+
+  it("normalizes alternate prototype navigation comments", () => {
+    const html = `
+      <!-- Top Navigation Bar -->
+      <header>
+        <a href="#">Assemblywoman Official</a>
+        <nav><a href="#">Home</a></nav>
+        <button>ES/EN</button>
+      </header>
+      <main>Newsletter content</main>
+    `;
+
+    const result = rewritePrototypeHtml(html, {
+      activeSlug: "newsletter",
+      basePath: "",
+    });
+
+    expect(result).toContain("<!-- TopNavBar -->");
+    expect(result).toContain('data-language-toggle');
+    expect(result).not.toContain("ES/EN");
+  });
+});
+
+describe("site translation dictionary", () => {
+  it("translates key site-wide and page-specific text into Spanish", () => {
+    expect(translateText("Home", "es")).toBe("Inicio");
+    expect(translateText("Assemblywoman Carmen Morales", "es")).toBe(
+      "Asambleísta Carmen Morales",
+    );
+    expect(translateText("Constituent Services", "es")).toBe(
+      "Servicios para Constituyentes",
+    );
+    expect(translateText("Make Your Voice Heard.", "es")).toBe(
+      "Haz que tu voz sea escuchada.",
+    );
+    expect(translateText("Contact Our Office", "es")).toBe(
+      "Comunícate con Nuestra Oficina",
+    );
+  });
+
+  it("keeps text unchanged when English is selected", () => {
+    expect(translateText("Contact Our Office", "en")).toBe("Contact Our Office");
   });
 });

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SiteTranslator } from "@/components/SiteTranslator";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -29,7 +30,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <SiteTranslator />
+      </body>
     </html>
   );
 }

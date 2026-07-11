@@ -163,7 +163,9 @@ ${links}
 <button aria-label="Search" class="text-on-surface-variant hover:text-primary">
 <span class="material-symbols-outlined">search</span>
 </button>
-<button class="font-label-md text-label-md text-primary dark:text-inverse-primary border border-outline-variant px-4 py-2 rounded hover:bg-surface-container-low transition-colors duration-200">ES/EN</button>
+<button type="button" data-language-toggle aria-label="Translate site to Spanish" aria-pressed="false" class="font-label-md text-label-md text-primary dark:text-inverse-primary border border-outline-variant px-4 py-2 rounded hover:bg-surface-container-low transition-colors duration-200">
+<span data-language-label>Español</span>
+</button>
 <button aria-label="Menu" class="md:hidden text-on-surface-variant hover:text-primary">
 <span class="material-symbols-outlined">menu</span>
 </button>
@@ -174,7 +176,7 @@ ${links}
 
 function normalizeTopNavigation(html: string, activeSlug: string, basePath: string) {
   return html.replace(
-    /<!-- TopNavBar(?: Component)? -->\s*<(header|nav)\b[\s\S]*?<\/\1>/,
+    /<!-- (?:TopNavBar(?: Component)?|Top Navigation Bar) -->\s*<(header|nav)\b[\s\S]*?<\/\1>/,
     buildTopNavigation(activeSlug, basePath),
   );
 }
